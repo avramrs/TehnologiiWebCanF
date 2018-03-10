@@ -1,3 +1,22 @@
-#Canf-logo {
-	color: lightblue;
+/***************************
+MARGINS
+***************************/
+.CF-no-margin {
+	margin: 0;
+}
+
+/***************************
+COLORS
+***************************/
+.CF-white-color {
+	color: white;
+}
+
+/***************************
+LOGO SECTION
+***************************/
+#CF-title-section {
+	text-align: center;
+	background-color: #0099FF;
+	padding: 20px 0 20px 0;
 }
