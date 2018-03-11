@@ -6,6 +6,13 @@ MARGINS
 }
 
 /***************************
+ALIGNMENT
+***************************/
+.CF-center-aligned-text {
+	text-align: center;
+}
+
+/***************************
 COLORS
 ***************************/
 .CF-white-color {
@@ -15,8 +22,21 @@ COLORS
 /***************************
 LOGO SECTION
 ***************************/
-#CF-title-section {
-	text-align: center;
+#CF-title-section {	
 	background-color: #0099FF;
 	padding: 20px 0 20px 0;
+	text-align: center;
+}
+
+/***************************
+TEMPLATE IMAGE SECTION
+***************************/
+.CF-template-can-images {
+	display: block;
+	margin-top: 40px;
+	margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+
 }
