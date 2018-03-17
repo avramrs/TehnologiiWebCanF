@@ -5,6 +5,11 @@ MARGINS
 	margin: 0;
 }
 
+body
+{
+	background-color: #82CDE8;
+}
+
 /***************************
 ALIGNMENT
 ***************************/
@@ -22,16 +27,42 @@ COLORS
 /***************************
 LOGO SECTION
 ***************************/
-#CF-title-section {	
+#CF-title-section {
 	background-color: #2F9CBF;
+	width: 100%;
+	height: 100;
 	text-align: left;
-	box-shadow: 0px 3px 50px rgba(0, 0, 0, 0.5)
+	box-shadow: 0px 3px 50px rgba(0, 0, 0, 0.5);
+	position: absolute;
 }
 .CF-container {
 	width: 960px;
-	height: auto;
+
 	margin: 0 auto;
 	}
+.mainContainer{
+	position: relative;
+}
+
+#CF-page {
+	background: #D3E7E8;
+	position: absolute;
+	top:12%;
+	left:0;
+	right:0;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 960px;
+	height: 100%;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	}
+#CF-PatratRosu{
+	background-color: red;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+}
 
 /***************************
 TEMPLATE IMAGE SECTION
