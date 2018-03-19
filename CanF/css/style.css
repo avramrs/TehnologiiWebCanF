@@ -91,10 +91,10 @@ THUMBNAIL SECTION
 	border-radius:10px;
 }
 .thumbnail figcaption{
-	text-align: center;
-	height: 14px;
-	font-size: 14px;
+	height: 38px;
 	width:125px;
+	text-align: center;
+	font-size: 14px;
 	overflow: hidden;
 }
 
@@ -119,7 +119,9 @@ PRODUCTS RESULTS SECTION
 	display: block;
 }
 #CF-search-results-text{
-	font-family:arial;
-	padding-top: 20px;
+	margin-top: 20px;
+	margin-left: 40px;
+	font-family:georgia,helvetica,arial,comic sans ms;
 	font-size: 40px;
+	color: #13404e;
 }
