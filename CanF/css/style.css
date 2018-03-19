@@ -30,7 +30,7 @@ LOGO SECTION
 #CF-title-section {
 	background-color: #2F9CBF;
 	width: 100%;
-	height: 100;
+	height: 100px;
 	text-align: left;
 	box-shadow: 0px 3px 50px rgba(0, 0, 0, 0.5);
 	position: absolute;
@@ -53,7 +53,6 @@ LOGO SECTION
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 960px;
-	height: 100%;
 	padding-top: 30px;
 	padding-bottom: 20px;
 	}
@@ -68,7 +67,7 @@ LOGO SECTION
 TEMPLATE IMAGE SECTION
 ***************************/
 .CF-template-can-images {
-	display: block;
+	display: flex;
 	margin-top: 40px;
 	margin-bottom: 20px;
     margin-left: auto;
@@ -80,41 +79,47 @@ TEMPLATE IMAGE SECTION
 THUMBNAIL SECTION
 ***************************/
 .thumbnail{
+	display: inline-block;
+	position: relative;
 	text-decoration: none;
 }
 .thumbnail img{
-	display: inline-block;
-	position:relative;
-	height:200px;
-	width:200px;
-	border:1px solid transparent;
+	height:125px;
+	width:125px;
+	border:1px solid;
 	border-color:gray;
 	border-radius:10px;
-	vertical-align:middle;
 }
 .thumbnail figcaption{
 	text-align: center;
+	height: 14px;
+	font-size: 14px;
+	width:125px;
 	overflow: hidden;
 }
 
 /***************************
 PRODUCTS RESULTS SECTION
 ***************************/
-#row{
+/*#row{
 	display:flex;
 	flex-wrap:wrap;
 	padding:0 5px;
 }
-#column {
+.column {
 	display: inline-flex;
   	flex:50%;
   	padding:0 5px;
 }
-#column .thumbnail img{
+.column .thumbnail img{
 	margin-top:10px;
 	margin-left:10px;
-}
+}*/
 #CF-search-results{
-	margin: auto;
-	width:75%;
+	display: block;
+}
+#CF-search-results-text{
+	font-family:arial;
+	padding-top: 20px;
+	font-size: 40px;
 }
