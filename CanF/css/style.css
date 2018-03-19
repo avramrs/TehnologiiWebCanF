@@ -101,20 +101,6 @@ THUMBNAIL SECTION
 /***************************
 PRODUCTS RESULTS SECTION
 ***************************/
-/*#row{
-	display:flex;
-	flex-wrap:wrap;
-	padding:0 5px;
-}
-.column {
-	display: inline-flex;
-  	flex:50%;
-  	padding:0 5px;
-}
-.column .thumbnail img{
-	margin-top:10px;
-	margin-left:10px;
-}*/
 #CF-search-results{
 	display: block;
 }
