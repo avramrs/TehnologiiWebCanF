@@ -36,7 +36,7 @@ LOGO SECTION
 	position: absolute;
 }
 .CF-container {
-	width: 960px;
+	max-width: 960px;
 
 	margin: 0 auto;
 	}
@@ -81,7 +81,6 @@ THUMBNAIL SECTION
 .thumbnail{
 	display: inline-block;
 	position: relative;
-	text-decoration: none;
 }
 .thumbnail img{
 	height:125px;
@@ -95,19 +94,33 @@ THUMBNAIL SECTION
 	width:125px;
 	text-align: center;
 	font-size: 14px;
+	white-space: nowrap;
 	overflow: hidden;
+	text-overflow: ellipsis;
 }
+.thumbnail a{
+	text-decoration: none;
+}
+
 
 /***************************
 PRODUCTS RESULTS SECTION
 ***************************/
 #CF-search-results{
 	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 #CF-search-results-text{
-	margin-top: 20px;
+	margin-top: 40px;
 	margin-left: 40px;
+	margin-right: 40px;
 	font-family:georgia,helvetica,arial,comic sans ms;
 	font-size: 40px;
 	color: #13404e;
+}
+#CF-search-results-text input{
+	float:right;
+	margin-top: 20px;
+	margin-right: 20px;
 }
