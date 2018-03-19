@@ -119,8 +119,12 @@ PRODUCTS RESULTS SECTION
 	font-size: 40px;
 	color: #13404e;
 }
-#CF-search-results-text input{
-	float:right;
+#CF-search-results-text input[type=text]{
 	margin-top: 20px;
 	margin-right: 20px;
+	width:100px;
+	transition: width 0.4s ease-in-out;
+}
+#CF-search-results-text input[type=text]:focus{
+	width:100%;
 }
