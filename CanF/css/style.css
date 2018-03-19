@@ -37,7 +37,6 @@ LOGO SECTION
 }
 .CF-container {
 	width: 960px;
-
 	margin: 0 auto;
 	}
 .mainContainer{
@@ -58,21 +57,29 @@ LOGO SECTION
 	padding-bottom: 20px;
 	}
 #CF-PatratRosu{
-	background-color: red;
-	width: 100px;
-	height: 100px;
-	margin: 0 auto;
+	background-color: #C5E2EC;
+	border-radius: 20px;
+	width: 400px;
+	height: 220px;
+	box-shadow: 0px 5px 100px rgba(0, 0, 0, 0.3);
+	position: absolute;
+	top: 21%;
+	left:0;
+	right:0;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-/***************************
-TEMPLATE IMAGE SECTION
-***************************/
-.CF-template-can-images {
-	display: block;
+#CF-Text{
+	font-family: arial;
+	color: #13404e;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
 	margin-top: 40px;
-	margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
 
+}
+#CF-Button{
+	 margin-left: 65px;
+	 margin-top: 5px;
 }
