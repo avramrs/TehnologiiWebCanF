@@ -108,7 +108,7 @@ PRODUCTS RESULTS SECTION
 ***************************/
 #CF-search-results{
 	display: block;
-	margin-left: auto;
+	margin-left: 58px;
 	margin-right: auto;
 }
 #CF-search-results-text{
