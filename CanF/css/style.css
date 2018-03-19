@@ -74,5 +74,47 @@ TEMPLATE IMAGE SECTION
     margin-left: auto;
     margin-right: auto;
     width: 30%;
+}
 
+/***************************
+THUMBNAIL SECTION
+***************************/
+.thumbnail{
+	text-decoration: none;
+}
+.thumbnail img{
+	display: inline-block;
+	position:relative;
+	height:200px;
+	width:200px;
+	border:1px solid transparent;
+	border-color:gray;
+	border-radius:10px;
+	vertical-align:middle;
+}
+.thumbnail figcaption{
+	text-align: center;
+	overflow: hidden;
+}
+
+/***************************
+PRODUCTS RESULTS SECTION
+***************************/
+#row{
+	display:flex;
+	flex-wrap:wrap;
+	padding:0 5px;
+}
+#column {
+	display: inline-flex;
+  	flex:50%;
+  	padding:0 5px;
+}
+#column .thumbnail img{
+	margin-top:10px;
+	margin-left:10px;
+}
+#CF-search-results{
+	margin: auto;
+	width:75%;
 }
