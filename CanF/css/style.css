@@ -48,7 +48,6 @@ LOGO SECTION
 /***************************
 GENERAL
 ***************************/
-<<<<<<< HEAD
 /* ALIGNMENT */
 .CF-center-aligned-text {
 	text-align: center;
@@ -128,7 +127,7 @@ UPLOAD PAGE
 	display: inline-block;
     margin: 70px 0 75px 20%;
     width: 30%;
-=======
+}
 .CF-template-can-images {
 	display: flex;
 	margin-top: 40px;
@@ -230,7 +229,6 @@ RESPONSIVENESS SECTION
 	#CF-products #CF-PDF{
 		float:left;
 	}
->>>>>>> ProductsPage
 }
 #CF-can-upload #CF-upload-text h1 {
 	margin: 0;
