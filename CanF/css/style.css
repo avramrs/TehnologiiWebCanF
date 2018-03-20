@@ -115,6 +115,9 @@ PRODUCTS RESULTS SECTION
 	padding: 5px;
 	border-radius: 10px;
 	float:right;
+	padding-left: 10px;
+	padding-right: 10px;
+	box-shadow: 20px;
 }
 #CF-search-results{
 	display: block;
@@ -137,4 +140,32 @@ PRODUCTS RESULTS SECTION
 }
 #CF-search-results-text input[type=text]:focus{
 	width:100%;
+}
+/***************************
+RESPONSIVENESS SECTION
+***************************/
+@media screen and(max-width: 800px){
+	#CF-search-results-text{	
+		text-align: center;
+	}
+	#CF-PDF{
+		float:left;
+	}
+}
+
+@media screen and(max-width: 480px){
+	#CF-search-results-text{	
+		text-align: center;
+	}
+	#CF-PDF{
+		float:left;
+	}
+}
+@media screen and(max-width: 320px){
+	#CF-search-results-text{
+		text-align: center;
+	}
+	#CF-PDF{
+		float:left;
+	}
 }
