@@ -112,7 +112,7 @@ GENERAL
 #CF-can-upload #CF-logo-section {
 	background-color: #2F9CBF;
 	width: 100%;
-	height: 100;
+	height: 100px;
 	box-shadow: 0px 3px 50px rgba(0, 0, 0, 0.5) !important;
 	position: relative;
 }
@@ -354,3 +354,4 @@ RESPONSIVENESS SECTION
 	#CF-LoginBox{
 		height: 180px;
 	}
+}
