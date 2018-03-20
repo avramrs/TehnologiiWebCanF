@@ -144,28 +144,28 @@ PRODUCTS RESULTS SECTION
 /***************************
 RESPONSIVENESS SECTION
 ***************************/
-@media screen and(max-width: 800px){
-	#CF-search-results-text{	
+@media screen and (max-width: 959px){
+	#CF-products #CF-search-results-text{
 		text-align: center;
 	}
-	#CF-PDF{
+	#CF-products #CF-PDF{
 		float:left;
 	}
 }
 
-@media screen and(max-width: 480px){
-	#CF-search-results-text{	
+@media screen and (max-width: 767px){
+	#CF-products #CF-search-results-text{
 		text-align: center;
 	}
-	#CF-PDF{
+	#CF-products #CF-PDF{
 		float:left;
 	}
 }
-@media screen and(max-width: 320px){
-	#CF-search-results-text{
+@media screen and (max-width: 479px){
+	#CF-products #CF-search-results-text{
 		text-align: center;
 	}
-	#CF-PDF{
+	#CF-products #CF-PDF{
 		float:left;
 	}
 }
