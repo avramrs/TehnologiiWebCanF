@@ -78,6 +78,9 @@ LOGO SECTION
 GENERAL
 ***************************/
 /* ALIGNMENT */
+.clearfix{
+	overflow: auto;
+}
 .CF-center-aligned-text {
 	text-align: center;
 }
@@ -198,14 +201,13 @@ THUMBNAIL SECTION
 PRODUCTS RESULTS SECTION
 ***************************/
 #CF-PDF{
-	font-family: "Ostrich Sans";
+	font-family: "Ostrich Sans",arial;
 	font-weight: bold;
 	text-decoration: none;
 	color: white;
 	background: #ff0000;
 	padding: 5px;
 	border-radius: 10px;
-	float:right;
 	padding-left: 10px;
 	padding-right: 10px;
 }
@@ -215,17 +217,24 @@ PRODUCTS RESULTS SECTION
 	margin-right: auto;
 }
 #CF-search-results-text{
+	display: block;
 	margin-top: 40px;
 	margin-left: 40px;
 	margin-right: 40px;
 	font-family:georgia,helvetica,arial,"comic sans ms";
 	font-size: 40px;
 	color: #13404e;
+	text-align: center;
+}
+#results{
+	display: block;
+	text-align: left;
 }
 #CF-search-results-text input[type=text]{
+	display: block;
 	margin-top: 20px;
 	margin-right: 20px;
-	width:100px;
+	width:120px;
 	transition: width 0.4s ease-in-out;
 }
 #CF-search-results-text input[type=text]:focus{
@@ -237,9 +246,6 @@ RESPONSIVENESS SECTION
 @media screen and (max-width: 959px){
 	#CF-products #CF-search-results-text{
 		text-align: center;
-	}
-	#CF-products #CF-PDF{
-		float:left;
 	}
 }
 #CF-Text{
@@ -255,22 +261,18 @@ RESPONSIVENESS SECTION
 	#CF-products #CF-search-results-text{
 		text-align: center;
 	}
-	#CF-products #CF-PDF{
-		float:left;
-	}
 }
 
 @media screen and (max-width: 479px){
 	#CF-products #CF-search-results-text{
 		text-align: center;
 	}
-	#CF-products #CF-PDF{
-		float:left;
-	}
 }
-@media screen and (max-width: 350px){
-	#CF-import-button{
+@media screen and (max-width: 320px){
+	#CF-title-section #CF-import-button{
+		margin-top: 10px;
 		margin-right: 0px;
+		width: 35%;
 	}
 }
 
@@ -319,9 +321,7 @@ RESPONSIVENESS SECTION
 	}
 }
 
-
 #CF-Button{
 	 margin-left: 65px;
 	 margin-top: 5px;
 }
-
