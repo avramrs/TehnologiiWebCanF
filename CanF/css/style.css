@@ -56,14 +56,14 @@ LOGO SECTION
 	padding-top: 30px;
 	padding-bottom: 20px;
 	}
-#CF-PatratRosu{
+#CF-LoginBox{
 	background-color: #C5E2EC;
 	border-radius: 20px;
 	width: 400px;
 	height: 220px;
 	box-shadow: 0px 5px 100px rgba(0, 0, 0, 0.3);
 	position: absolute;
-	top: 21%;
+	top: 35%;
 	left:0;
 	right:0;
 	margin-left: auto;
