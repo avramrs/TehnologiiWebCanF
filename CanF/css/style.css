@@ -83,3 +83,24 @@ LOGO SECTION
 	 margin-left: 65px;
 	 margin-top: 5px;
 }
+
+@media screen and (max-width: 420px){
+		#CF-LoginBox{
+			width: 80%;
+			height: 200px;
+		}
+		#CF-Text{
+			font-size: 18px;
+		}
+		#CF-Button{
+			width: 80%;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+}
+@media screen and (max-width: 320px){
+	#CF-LoginBox{
+		height: 180px;
+	}
