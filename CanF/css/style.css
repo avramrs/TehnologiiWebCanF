@@ -131,11 +131,13 @@ CAN TEMPLATE PAGE
     padding: 10px;
     border: 1px solid #1e6379;
     background-color: white;
+    max-width: 90%;
 }
 /* CAN DETAILS TABLE */
 #CF-can-template .CF-can-details-table table {
 	width: 90%;
 	margin: 0 auto;
+	table-layout: fixed;
 }
 #CF-can-template .CF-can-details-table th {
 	padding: 10px;
