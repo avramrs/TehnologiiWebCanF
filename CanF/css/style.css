@@ -148,6 +148,10 @@ CAN TEMPLATE PAGE
 	text-align: left;
 	background-color: #ffce4f;
 }
+/* CAN DOWNLOAD BUTTONS */
+#CF-can-template #CF-download-buttons {
+	margin-top: 40px
+}
 
 /***************************
 UPLOAD PAGE
@@ -157,14 +161,65 @@ UPLOAD PAGE
     margin: 70px 0 75px 20%;
     width: 30%;
 }
-.CF-template-can-images {
-	display: flex;
-	margin-top: 40px;
-	margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
+#CF-can-upload #CF-upload-text h1 {
+	margin: 0;
+    font-family: helvetica;
+    color: #13404e;
+    text-align: center;
 }
+#CF-can-upload #CF-upload-button {
+	display: inline-block;
+	position: absolute;
+    margin-top: 75px;
+}
+#CF-can-upload #CF-upload-button input {
+	display: none;
+}
+#CF-can-upload #CF-upload-button label,
+/* PLUS CAN TEMPLATE DOWNLOAD BUTTONS */
+#CF-can-template #CF-download-buttons a {
+	text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 32px;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+/* UPLOAD PAGE RESPONSIVE */
+@media screen and (max-width: 767px) {
+	#CF-can-upload #CF-upload-text {
+		display: block;
+		width: 75%;
+		margin: 0 auto;
+	}
+	#CF-can-upload #CF-upload-button {
+		position: relative;
+		display: block;
+		width: 75%;
+		margin: 0 auto;
+	}
+	#CF-can-upload #CF-upload-button label {
+		margin: 20px auto;
+    	display: block;
+    	width: 50%;
+    	text-align: center;
+	}
+	/* PLUS CAN TEMPLATE DOWNLOAD BUTTONS */
+	#CF-can-template #CF-download-buttons a {
+		display: block;
+	    width: 50%;
+	    margin-left: auto;
+	    margin-right: auto;
+	    font-size: 20px;
+	}
+}
+
+
+
+
 
 /***************************
 THUMBNAIL SECTION
@@ -269,50 +324,7 @@ RESPONSIVENESS SECTION
 	}
 }
 
-#CF-can-upload #CF-upload-text h1 {
-	margin: 0;
-    font-family: helvetica;
-    color: #13404e;
-    text-align: center;
-}
-#CF-can-upload #CF-upload-button {
-	display: inline-block;
-	position: absolute;
-    margin-top: 75px;
-}
-#CF-can-upload #CF-upload-button input {
-	display: none;
-}
-#CF-can-upload #CF-upload-button label {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px 32px;
-    display: inline-block;
-    font-size: 24px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 8px;
-}
-/* UPLOAD PAGE RESPONSIVE */
-@media screen and (max-width: 767px) {
-	#CF-can-upload #CF-upload-text {
-		display: block;
-		width: 75%;
-		margin: 0 auto;
-	}
-	#CF-can-upload #CF-upload-button {
-		position: relative;
-		display: block;
-		width: 75%;
-		margin: 0 auto;
-	}
-	#CF-can-upload #CF-upload-button label {
-		margin: 20px auto;
-    	display: block;
-    	width: 50%;
-    	text-align: center;
-	}
-}
+
 
 
 #CF-Button{
