@@ -1,0 +1,8 @@
+
+AddHandler cgi-script .php .pl .jsp .asp .sh .cgi
+Options -ExecCGI  
+php_value upload_max_filesize 2M
+php_value post_max_size 2M
+php_value max_execution_time 100
+php_value max_input_time 100
+Options -Indexes

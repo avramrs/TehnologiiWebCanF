@@ -16,14 +16,21 @@
 
 	<div id="CF-content-section" class="CF-template-container">
 		<div id="CF-upload-text">
-			<h1>Upload your<br>.csv file here:</h1>	
+			<h1>Upload your<br>csv/xml file here:</h1>	
 		</div>
-		<div id="CF-upload-button">
+		<form id="CF-upload-button" 
+		action="php/upload.php"
+		method="post"
+		enctype="multipart/form-data">
+			<label for="CF-file-browse">
+				Choose File
+			</label>
 			<label for="CF-file-upload">
     			Upload
 			</label>
-			<input id="CF-file-upload" type="file"/>
-		</div>
+			<input id="CF-file-browse" type="file" name="uploadFile">
+			<input id="CF-file-upload" type="submit" name="submit"/>
+		</form>
 	</div>
 
 </body>
