@@ -272,6 +272,9 @@ PRODUCTS RESULTS SECTION
 	margin-left: 58px;
 	margin-right: auto;
 }
+#CF-search-results a {
+	text-decoration: none;
+}
 #CF-search-results-text{
 	display: block;
 	margin-top: 40px;
