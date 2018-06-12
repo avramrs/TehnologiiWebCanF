@@ -1,3 +1,18 @@
+<?php
+session_start();
+$user = null;
+if(isset($_SESSION['user_data']))
+{
+	$user = $_SESSION['user_data'];
+
+}
+if(!$user)
+{
+	header('Location: Login.php');
+}
+
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,7 +20,7 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body id="CF-can-template" class="CF-no-margin CF-lightblue-background-color">
-	
+
 	<div id="CF-logo-section" >
 		<div class="CF-template-container">
 			<a href="Products.html">

@@ -60,7 +60,7 @@ LOGO SECTION
 	background-color: #C5E2EC;
 	border-radius: 20px;
 	width: 400px;
-	height: 270px;
+	height: 300px;
 	box-shadow: 0px 5px 100px rgba(0, 0, 0, 0.3);
 	position: absolute;
 	top: 35%;
@@ -325,11 +325,11 @@ RESPONSIVENESS SECTION
 }
 
 #CF-TextField{
-	margin-left: 127px;
+	margin-left: 130px;
 }
 
 #CF-LoginBtn{
-	margin-left: 125px;
+	margin-left: 128px;
 }
 
 #CF-Btn{
@@ -337,6 +337,21 @@ RESPONSIVENESS SECTION
 	color: #fff;
 	background: #337ab7;
 	padding: 5px;
+}
+#CF-Logout{
+	font-family: arial;
+	color: #fff;
+	background: #337ab7;
+	padding: 5px;
+	margin-left: 50px;
+}
+
+#CF-Error{
+	font-family: arial;
+	color: #993737;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
 }
 
 @media screen and (max-width: 767px){

@@ -1,3 +1,19 @@
+<?php
+session_start();
+$user = null;
+if(isset($_SESSION['user_data']))
+{
+	$user = $_SESSION['user_data'];
+
+}
+if(!$user)
+{
+	header('Location: Login.php');
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
