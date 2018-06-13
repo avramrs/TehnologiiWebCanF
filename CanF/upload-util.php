@@ -59,7 +59,11 @@ function isValidCSV($fileName)
     $data = array();
     if (($handle = fopen("./uploads/" . $fileName, 'r')) !== false) {
         $header = fgetcsv($handle, 1000);
+        $columnNumber = count($header);
         while (($row = fgetcsv($handle, 1000)) !== false) {
+            if(count($row) !== $columnNumber){
+                return false;
+            }
             $data[] = array_combine($header, $row);
         }
         fclose($handle);
