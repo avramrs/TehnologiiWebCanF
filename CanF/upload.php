@@ -15,14 +15,14 @@ require_once("uploadUtil.php");
 <html>
 <head>
     <title>CanF</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body id="CF-can-upload" class="CF-no-margin CF-lightblue-background-color">
     
     <div id="CF-logo-section" >
         <div class="CF-template-container">
-            <a href="../Products.html">
-                <img src="../img/LogoTW2.png" alt="Logo">
+            <a href="./products.php">
+                <img src="./img/LogoTW2.png" alt="Logo">
             </a>
         </div>
     </div>
@@ -62,11 +62,13 @@ function upload()
         return "Sorry, only XML and CSV files are allowed.";
     }
     if (move_uploaded_file($_FILES["uploadFile"]["tmp_name"], $target_file)) {
-        if(uploadRoutine($_FILES["uploadFile"]["name"], $FileType)===false){
-            return "XML not valid.";
+        if (uploadRoutine($_FILES["uploadFile"]["name"], $FileType) === false) {
+            unlink($target_file);
+            return "The " . $FileType . " file is not valid.";
+        } else {
+            unlink($target_file);
+            return "The file " . basename($_FILES["uploadFile"]["name"]) . " has been uploaded.";
         }
-        unlink($target_file);
-        return "The file " . basename($_FILES["uploadFile"]["name"]) . " has been uploaded.";
     } else {
         return "Sorry, there was an error uploading your file.";
     }
