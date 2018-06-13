@@ -163,6 +163,12 @@ CAN TEMPLATE PAGE
 /***************************
 UPLOAD PAGE
 ***************************/
+#CF-can-upload #CF-upload-text-result{
+	display: block;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	text-align: center;
+}
 #CF-can-upload #CF-upload-text {
 	display: inline-block;
     margin: 70px 0 75px 20%;
