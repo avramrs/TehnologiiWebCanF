@@ -29,7 +29,7 @@
 
 	$str.= "\n\t</product>\n</products>";
 
-	$file_name="product.xml"; // file name
+	$file_name="product.xml";
 	$fp = fopen ($file_name, "w");
 	fwrite ($fp,$str);
 	fclose ($fp);

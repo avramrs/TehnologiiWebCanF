@@ -74,9 +74,12 @@
 		?>
 
 		<div id="CF-download-buttons" class="CF-center-aligned-text">
-			<a download href="can-template.html">
-  				Download .csv
-			</a>
+			<?php
+				echo
+					'<a href="csv-download.php?id=' . $canID . '">
+		  				Download .csv
+					</a>';
+			?>
 			<?php
 				echo
 					'<a href="xml-download.php?id=' . $canID . '">
