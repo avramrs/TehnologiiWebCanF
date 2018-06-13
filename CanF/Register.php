@@ -5,13 +5,9 @@ if(isset($_POST['user'])&&isset($_POST['password']))
 {
 	$pass = $_POST['password'];
 	$user = trim($_POST['user']);
-	if(!preg_match('/[a-zA-Z0-9]+/',$user))
+	if(!preg_match('/^[a-zA-Z\d]+$/',$user))
 	{
 		$error = 'Username must contain only letters and digits.';
-	}
-	if(!preg_match('/[a-zA-Z0-9]+/',$pass))
-	{
-		$error = 'Password must contain only letters and digits.';
 	}
 	if(!($error)&&(strlen($pass)<6))
 	{

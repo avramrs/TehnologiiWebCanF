@@ -27,7 +27,7 @@ if(isset($_POST['user'])&&isset($_POST['password']))
 	}
 	if(!$error)
 	{
-		$passhash = password_hash($pass,PASSWORD_DEFAULT);
+		
 
 		if(!password_verify($pass,$password))
 		{
