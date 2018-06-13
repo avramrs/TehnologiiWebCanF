@@ -114,7 +114,7 @@ function getUploadInfo()
         $user = $_SESSION['user_data'];
     }
     $database = new Db();
-    $uid = $database->findUser($user["username"]);
+    $uid = $user["id"];
     $currentTime = new DateTime();
     $uploadInfo = ["user_id" => $uid, "upload_date" => $currentTime->format('Y-m-d H:i:s')];
     return $uploadInfo;

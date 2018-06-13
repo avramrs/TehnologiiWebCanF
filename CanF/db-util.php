@@ -25,10 +25,6 @@ class Db
         $statement->bind_param("isissssssssss", $uploadInfo["user_id"],$uploadInfo["upload_date"], $product["cans_number"], $product["url_image"], $product["name"],$product["ingredients"],$product["packaging"], $product["quantity"],$product["serving"],$product["brand"],$product["shop"],$product["country"],$product["made_in"]);
         $statement->execute();
     }
-    public function findUser($username){
-        $res = $this->conn->query("SELECT id FROM users");
-        return $res->fetch_row()[0];
-    }
 
     public function __destruct()
     {
