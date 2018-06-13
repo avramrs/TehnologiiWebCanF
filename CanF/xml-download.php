@@ -10,26 +10,24 @@
 		die ('A survenit o eroare la interogare');
 	}
 
-	$str ="<?xml version='1.0' encoding='UTF-8'?>\n<product>";
+	$str = '<?xml version="1.0" encoding="utf-8"?>';
+	$str .= "\n<products>\n\t<product>";
 
 	while ($inreg = $rez->fetch_assoc()) {
-	  	$str .= "\n\t<product_id>$inreg[product_id]</product_id>";
-	  	$str .= "\n\t<user_id>$inreg[user_id]</user_id>";
-	  	$str .= "\n\t<upload_date>$inreg[upload_date]</upload_date>";
-		$str .= "\n\t<cans_number>$inreg[cans_number]</cans_number>";
-		$str .= "\n\t<url_image>$inreg[url_image]</url_image>";
-		$str .= "\n\t<name>$inreg[name]</name>";
-		$str .= "\n\t<ingredients>$inreg[ingredients]</ingredients>";
-		$str .= "\n\t<packaging>$inreg[packaging]</packaging>";
-		$str .= "\n\t<quantity>$inreg[quantity]</quantity>";
-		$str .= "\n\t<serving>$inreg[serving]</serving>";
-		$str .= "\n\t<brand>$inreg[brand]</brand>";
-		$str .= "\n\t<shop>$inreg[shop]</shop>";
-		$str .= "\n\t<country>$inreg[country]</country>";
-		$str .= "\n\t<made_in>$inreg[made_in]</made_in>";
+		$str .= "\n\t\t<cans_number>$inreg[cans_number]</cans_number>";
+		$str .= "\n\t\t<url_image>$inreg[url_image]</url_image>";
+		$str .= "\n\t\t<name>$inreg[name]</name>";
+		$str .= "\n\t\t<ingredients>$inreg[ingredients]</ingredients>";
+		$str .= "\n\t\t<packaging>$inreg[packaging]</packaging>";
+		$str .= "\n\t\t<quantity>$inreg[quantity]</quantity>";
+		$str .= "\n\t\t<serving>$inreg[serving]</serving>";
+		$str .= "\n\t\t<brand>$inreg[brand]</brand>";
+		$str .= "\n\t\t<shop>$inreg[shop]</shop>";
+		$str .= "\n\t\t<country>$inreg[country]</country>";
+		$str .= "\n\t\t<made_in>$inreg[made_in]</made_in>";
 	}
 
-	$str.= "\n</product>";
+	$str.= "\n\t</product>\n</products>";
 
 	$file_name="product.xml"; // file name
 	$fp = fopen ($file_name, "w");
