@@ -1,17 +1,14 @@
 <?php
-session_start();
-$user = null;
-if(isset($_SESSION['user_data']))
-{
-	$user = $_SESSION['user_data'];
-
-}
-if(!$user)
-{
-	header('Location: Login.php');
-}
-
-
+	session_start();
+	$user = null;
+	if(isset($_SESSION['user_data']))
+	{
+		$user = $_SESSION['user_data'];
+	}
+	if(!$user)
+	{
+		header('Location: Login.php');
+	}
 ?>
 
 <!DOCTYPE html>
@@ -24,92 +21,51 @@ if(!$user)
 	<div id="CF-page">
 		<div id="CF-products">
 			<a id="CF-Logout" href="Logout.php">Logout</a>
-		<div id=CF-search-results-text>
+			<div id=CF-search-results-text>
+				<a id="CF-PDF" href="stocks.pdf" download target="_blank">
+					STOCK
+				</a><br />
+				<!-- <input type="text" placeholder="Search..."><br />
+				<span id="results">Results:</span> -->
+			</div>
 
-			<a id="CF-PDF" href="stocks.pdf" download target="_blank">
-				STOCK
-			</a><br />
-			<input type="text" placeholder="Search..."><br />
-			<span id="results">Results:</span>
+			<!-- PHP -->
+			<div id="CF-search-results">
+				<?php
+
+					$mysql = new mysqli ('localhost', 'root',	'',	'TWProject');
+					if (mysqli_connect_errno()) {
+						die ('Conexiunea a esuat...');
+					}
+
+					if (!($rez = $mysql->query ('select product_id, name, url_image from products'))) {
+						die ('A survenit o eroare la interogare');
+					}
+
+					while ($inreg = $rez->fetch_assoc()) {
+						echo
+						   	'<a href="can-template.php?id=' . $inreg['product_id'] . '">
+								<figure class="thumbnail">
+										<img src="' . $inreg['url_image'] . '">
+										<figcaption>' . $inreg['name'] . '</figcaption>
+								</figure>
+							</a>';
+					}
+
+					$mysql->close();	
+				?>
+			</div>
+
 		</div>
-		<div id="CF-search-results">
-			<a href="can-template.php">
-				<figure class="thumbnail">
-						<img src="img/conserva.jpg">
-						<figcaption>Conserva</figcaption>
-				</figure>
-			</a>
-			<a href="can-template.php">
-				<figure class="thumbnail">
-						<img src="img/conserva2.jpg">
-						<figcaption>Conserva</figcaption>
-				</figure>
-			</a>
-			<a href="can-template.php">
-				<figure class="thumbnail">
-						<img src="img/conserva3.jpg">
-						<figcaption>Conserva</figcaption>
-				</figure>
-			</a>
-			<a href="can-template.php">
-				<figure class="thumbnail">
-						<img src="img/conserva.jpg">
-						<figcaption>Conserva</figcaption>
-				</figure>
-			</a>
-			<a href="can-template.php">
-				<figure class="thumbnail">
-						<img src="img/conserva2.jpg">
-						<figcaption>Conserva</figcaption>
-				</figure>
-			</a>
-			<a href="can-template.php">
-				<figure class="thumbnail">
-						<img src="img/conserva3.jpg">
-						<figcaption>Conserva</figcaption>
-				</figure>
-			</a>
-			<a href="can-template.php">
-				<figure class="thumbnail">
-						<img src="img/conserva.jpg">
-						<figcaption>Conserva</figcaption>
-				</figure>
-			</a>
-			<a href="can-template.php">
-				<figure class="thumbnail">
-						<img src="img/conserva.jpg">
-						<figcaption>Conserva</figcaption>
-				</figure>
-			</a>
-			<a href="can-template.php">
-				<figure class="thumbnail">
-						<img src="img/conserva.jpg">
-						<figcaption>Conserva</figcaption>
-				</figure>
-			</a>
-			<a href="can-template.php" >
-				<figure class="thumbnail">
-					<img src="img/conserva2.jpg">
-					<figcaption>Conserva cu cel mai lung nume din existenta conservelor, first of her name, the Unburnt, Queen of the Andals and the First Men, Khaleesi of the Great Grass Sea, Breaker of Chains, and Mother of Dragons</figcaption>
-				</figure>
-			</a>
-			<a href="can-template.php">
-				<figure class="thumbnail">
-						<img src="img/conserva2.jpg">
-						<figcaption>Conserva</figcaption>
-				</figure>
-			</a>
-		</div>
-	</div>
 	</div>
 	<div id="CF-title-section" >
 		<div class="CF-container">
-		<a href="Products.php">
-			<img src="img/LogoTW2.png" alt="Logo">
-		</a>
-		<a href="upload-page.php">
-			<img id=CF-import-button src="img/Import.png" alt="Logo">
-		</a>
+			<a href="products.php">
+				<img src="img/LogoTW2.png" alt="Logo">
+			</a>
+			<a href="upload-page.php">
+				<img id=CF-import-button src="img/Import.png" alt="Logo">
+			</a>
 		</div>
 	</div>
 </body>

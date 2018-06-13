@@ -20,7 +20,7 @@ if(!$user)
 	
 	<div id="CF-logo-section" >
 		<div class="CF-template-container">
-			<a href="Products.html">
+			<a href="products.php">
 				<img src="img/LogoTW2.png" alt="Logo">
 			</a>
 		</div>

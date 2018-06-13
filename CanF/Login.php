@@ -42,7 +42,7 @@ if(isset($_POST['user'])&&isset($_POST['password']))
 					'username'=>$username
 
 			);
-			header('Location: Products.php');
+			header('Location: products.php');
 		}
 	}
 }
