@@ -1,5 +1,5 @@
 <?php
-require_once("dbUtil.php");
+require_once("db-util.php");
 const tableFields = ["cans_number", "name", "ingredients", "url_image", "packaging", "quantity", "serving", "brand", "shop", "country", "made_in"];
 const tableFieldsNumber = 11;
 function uploadRoutine($fileName, $fileType)
