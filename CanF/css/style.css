@@ -264,7 +264,7 @@ THUMBNAIL SECTION
 /***************************
 PRODUCTS RESULTS SECTION
 ***************************/
-#CF-PDF{
+.CF-PDF{
 	font-family: "Ostrich Sans",arial;
 	font-weight: bold;
 	text-decoration: none;
@@ -274,6 +274,7 @@ PRODUCTS RESULTS SECTION
 	border-radius: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
+	margin: 20px;
 }
 #CF-search-results{
 	display: block;

@@ -22,9 +22,16 @@
 		<div id="CF-products">
 			<a id="CF-Logout" href="Logout.php">Logout</a>
 			<div id=CF-search-results-text>
-				<a id="CF-PDF" href="stocks.pdf" download target="_blank">
-					STOCK
-				</a><br />
+				<a class="CF-PDF" href="stocks.pdf" download target="_blank">
+					Stock
+				</a>
+				<!-- <br /> -->
+				<a class="CF-PDF" href="upload-page.php">
+					Import
+				</a>
+				<a class="CF-PDF" href="contact.php">
+					Contact
+				</a>
 				<!-- <input type="text" placeholder="Search..."><br />
 				<span id="results">Results:</span> -->
 			</div>

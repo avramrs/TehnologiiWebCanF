@@ -83,6 +83,12 @@
 		  				Download .xml
 					</a>';
 			?>
+			<a href="#">
+  				Update
+			</a>
+			<a href="#">
+  				Delete
+			</a>
 		</div>
 	</div>
 
