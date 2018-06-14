@@ -71,28 +71,28 @@
 			}
 
 			$mysql->close();
-		?>
-
-		<div id="CF-download-buttons" class="CF-center-aligned-text">
-			<?php
-				echo
-					'<a href="csv-download.php?id=' . $canID . '">
+		
+			echo
+				'<div id="CF-download-buttons" class="CF-center-aligned-text">
+					<a href="csv-download.php?id=' . $canID . '">
 		  				Download .csv
-					</a>';
-			?>
-			<?php
-				echo
-					'<a href="xml-download.php?id=' . $canID . '">
+					</a>
+					<a href="xml-download.php?id=' . $canID . '">
 		  				Download .xml
 					</a>';
-			?>
-			<a href="#">
-  				Update
-			</a>
-			<a href="#">
-  				Delete
-			</a>
-		</div>
+
+					if (strcmp($_SESSION['user_data']['username'], 'admin') === 0) {
+						echo
+						'<a href="upload-page.php?id=' . $canID . '">
+			  				Update
+						</a>
+						<a href="#">
+			  				Delete
+						</a>';
+					}
+					
+			echo '</div>';
+		?>
 	</div>
 
 </body>
