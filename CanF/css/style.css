@@ -29,9 +29,15 @@ LOGO SECTION
 }
 #CF-import-button{
 	float:right;
-	width: 150px;
-	padding-top: 10px;
-	margin-right: 14px;
+	box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+	margin-right: 25px;
+	margin-top: 24px;
+	border-radius: 10px;
+	font-family: arial;
+	color: #fff;
+	background: #257792;
+	padding: 14px;
+	text-decoration: none;
 }
 .CF-container {
 	max-width: 960px;
@@ -350,14 +356,7 @@ PRODUCTS RESULTS SECTION
 #CF-search-results-text input[type=text]:focus{
 	width:100%;
 }
-/***************************
-RESPONSIVENESS SECTION
-***************************/
-@media screen and (max-width: 959px){
-	#CF-products #CF-search-results-text{
-		text-align: center;
-	}
-}
+
 #CF-Text{
 	font-family: arial;
 	color: #13404e;
@@ -413,6 +412,22 @@ RESPONSIVENESS SECTION
 	margin-bottom: 50px;
 }
 
+#CF-Button{
+	margin-left: 65px;
+	margin-top: 5px;
+}
+
+/***************************
+RESPONSIVENESS SECTION
+***************************/
+@media screen and (max-width: 959px){
+	#CF-products #CF-search-results-text{
+		text-align: center;
+	}
+
+}
+
+
 @media screen and (max-width: 767px){
 	#CF-products #CF-search-results-text{
 		text-align: center;
@@ -425,19 +440,24 @@ RESPONSIVENESS SECTION
 	}
 }
 @media screen and (max-width: 320px){
-	#CF-title-section #CF-import-button{
-		margin-top: 10px;
-		margin-right: 0px;
-		width: 35%;
+	
+	#CF-import-button{
+		padding: 6px;
 	}
 }
-
-
-
-#CF-Button{
-	 margin-left: 65px;
-	 margin-top: 5px;
+@media screen and (max-width: 285px){
+	#CF-title-section{
+		height: 200px;
+	}
+	#CF-import-button{
+		float:left;
+		
+	}
+	
 }
+
+
+
 
 
 
