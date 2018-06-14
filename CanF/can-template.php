@@ -57,7 +57,7 @@
 
 				if ((strcmp($_SESSION['user_data']['username'], 'admin') === 0) || ($_SESSION['user_data']['id'] == $userID)) {
 					echo
-					'<a href="update-form.php">
+					'<a href="update-form.php?id=' . $canID . '">
 		  				Update
 					</a>
 					<a href="delete.php?id=' . $canID . '">
