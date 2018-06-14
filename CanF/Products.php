@@ -16,6 +16,19 @@
 <head>
 	<title>CanF</title>
 	<link rel="stylesheet" href="css/style.css">
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){ 
+
+		    var auto= $('#CF-ajax-content'), refreshed_content;	
+				refreshed_content = setInterval(function(){
+				auto.load("products-reload.php");},
+				1000);
+				console.log(refreshed_content);										 
+				return false; 
+		});
+	</script>
 </head>
 <body class="CF-no-margin">
 	<div id="CF-page">
@@ -38,29 +51,7 @@
 
 			<!-- PHP -->
 			<div id="CF-search-results">
-				<?php
-
-					$mysql = new mysqli ('localhost', 'root',	'',	'TWProject');
-					if (mysqli_connect_errno()) {
-						die ('Conexiunea a esuat...');
-					}
-
-					if (!($rez = $mysql->query ('select product_id, name, url_image from products'))) {
-						die ('A survenit o eroare la interogare');
-					}
-
-					while ($inreg = $rez->fetch_assoc()) {
-						echo
-						   	'<a href="can-template.php?id=' . $inreg['product_id'] . '">
-								<figure class="thumbnail">
-										<img src="' . $inreg['url_image'] . '">
-										<figcaption>' . $inreg['name'] . '</figcaption>
-								</figure>
-							</a>';
-					}
-
-					$mysql->close();	
-				?>
+				<div id="CF-ajax-content"> </div> 
 			</div>
 
 		</div>
