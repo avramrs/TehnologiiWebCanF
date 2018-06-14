@@ -70,7 +70,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $database->updateProductByID($updateInfo);
         $success = "Success!";
     }
-    print_r($updateInfo);
 }
 
 //print_r($productInfo);

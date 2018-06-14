@@ -1,0 +1,120 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CanF</title>
+    <link rel="stylesheet" href="scholarly.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <article typeof="schema:ScholarlyArticle" resource="#">
+        <h1>CanF - Canned food manager</h1>
+        <section>
+            <ol>
+                <li property="schema:author" typeof="sa:ContributorRole">
+                    <a property="schema:author" href="https://github.com/avramrs" typeof="schema:Person">
+                        <span property="schema:givenName">Marius</span>
+                        <span property="schema:familyName">Avram</span>
+                    </a>
+                </li>
+                <li property="schema:contributor" typeof="sa:ContributorRole">
+                    <a property="schema:contributor" href="https://github.com/cosminbbx" typeof="schema:Person">
+                        <span property="schema:givenName">Cosmin</span>
+                        <span property="schema:familyName">Virga</span>
+                    </a>
+                </li>
+                <li property="schema:contributor" typeof="sa:ContributorRole">
+                    <a property="schema:contributor" href="https://github.com/valentinpalade28" typeof="schema:Person">
+                        <span property="schema:givenName">Valentin</span>
+                        <span property="schema:familyName">Palade</span>
+                    </a>
+                </li>
+            </ol>
+        </section>
+        <section typeof="sa:Abstract">
+            <h3>Abstract</h3>
+            <p>
+                These days keeping track of information is a very important issue. Stocks management is a part of this issue, companies can
+                benefit from a way to keep track of the information about their stocks. An interface is needed to ease the
+                job of users and handle this task.
+            </p>
+        </section>
+        <section typeof="sa:ShortDesc">
+            <h3>Short Description</h3>
+            <p>
+                CanF is a web application that is used for managing information about food kept in cans, boxes or any other form of packaging.
+                The goal of our project is to provide a way to manage food so that users can easily and efficiently find
+                any information they may need about it. Users can upload informations about cans and download them at the
+                push of a button.
+            </p>
+        </section>
+
+        <section typeof="sa:GitHub">
+            <h3>GitHub</h3>
+            <p>
+                Github was used for version control during development. Different branches were used for developing individual pages and
+                functionalities. This approach was chosen so that pages could be created without disrupting the work of the
+                others. Moreover it allowed each of us to test the functionality localy before integration.
+            </p>
+            <figure typeof="sa:Image">
+                <img src="./githubWorkflow.png">
+                <figcaption>
+                    Example of branches we used during the project development.
+                </figcaption>
+            </figure>
+        </section>
+        <section typeof="sa:Database">
+            <h3>Database</h3>
+            <p>
+                For the purpose of managing our data we are using a relational database. MySQL was chosen for it's ease of use. Two tables
+                were created, one to keep track of our users and the other to manage the informations about our products.
+                The users table contains the id, username and the encrypted hash value of the password. These are created
+                after registering, each username and id being unique. The products table contains details about the food
+                and metadata. The only required fields in this table are the ids and the name of the product.
+            </p>
+            <figure typeof="sa:Image">
+                <img src="./DataBase.png">
+                <figcaption>
+                    The tables used in the database.
+                </figcaption>
+            </figure>
+        </section>
+        <section typeof="sa:Usecase">
+            <h3>Usecase</h3>
+            <p>
+                <!-- DE SCRIS TEXT AICI -->
+            </p>
+            <figure typeof="sa:Image">
+                <img src="./Usecase.png" width="1200" height="730">
+                <figcaption>
+                    The user has access to most of the application. Owner and Admin are 2 special types of user.
+                </figcaption>
+            </figure>
+        </section>
+        <section typeof="sa:Implementation">
+            <h3>Implementation</h3>
+            <p>
+                <!-- DE SCRIS TEXT AICI -->
+            </p>
+            <figure typeof="sa:Image">
+                <img src="./ClassDiagram.png" width="1200" height="730">
+                <figcaption>
+                    The complete structure of the project.
+                </figcaption>
+            </figure>
+        </section>
+        <section typeof="sa:Conclusion">
+            <h3>Conclusion</h3>
+            <p>
+                CanF is in a work in progress at the moment and so we are always open to any feedback you may have. For any ideea or sugestion
+                email us at
+                <a href="mailto:cannedfoodmanager@gmail.com" property="schema:email">cannedfoodmanager@gmail.com</a>.
+            </p>
+        </section>
+    </article>
+</body>
+
+</html>
