@@ -89,7 +89,7 @@
 						'<a href="update-form.php">
 			  				Update
 						</a>
-						<a href="#">
+						<a href="delete.php?id=' . $canID . '">
 			  				Delete
 						</a>';
 					}
