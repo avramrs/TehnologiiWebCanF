@@ -18,7 +18,8 @@
 		<div class="CF-container">
 		<a href="Products.php">
 			<img src="img/LogoTW2.png" alt="Logo">
-		</a>
+        </a>
+        <a id="CF-import-button" href="Logout.php">Logout</a>
 		</div>
 	</div>
 

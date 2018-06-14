@@ -89,6 +89,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <a href="./products.php">
                 <img src="./img/LogoTW2.png" alt="Logo">
             </a>
+            <a id="CF-import-button" href="Logout.php">Logout</a>
         </div>
     </div>
 
