@@ -219,21 +219,7 @@ UPLOAD PAGE
 	font-size: 14pt;
 	
 }
-#CF-can-upload #CF-form-container #form-error{
-	font-family: helvetica;
-	font-weight: bold;
-	color: #ff0000;
-	clear: both;
-}
-#CF-can-upload #CF-form-container #form-success{
-	font-family: helvetica;
-	font-weight: bold;
-	color: #4CAF50;
-	clear: both;
-}
-
-#CF-can-upload #CF-form-container label,
-#CF-can-upload #CF-form-container h1
+#CF-can-upload #CF-form-container label
 {
 	font-family: helvetica;
 	font-weight: bold;
@@ -419,10 +405,12 @@ RESPONSIVENESS SECTION
 	font-weight: bold;
 	text-align: center;
 }
+
 #CF-Contact{
 	font-family: arial;
-	margin-top: 100px;
-	margin-left: 50px;
+	margin-top: 30px;
+	margin-left: 70px;
+	margin-bottom: 50px;
 }
 
 @media screen and (max-width: 767px){

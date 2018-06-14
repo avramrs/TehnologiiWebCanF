@@ -8,7 +8,9 @@
 
 		<div id="CF-page">
 		    <div id="CF-Contact">  
-            If you have any complaints or want to import data from other places please send us an email
+            <h1>Contact</h1>
+            <h3>If you have any complaints or want to import data from other places please send us an email.</h1>
+            <a href="mailto:cannedfoodmanager@gmail.com">cannedfoodmanager@gmail.com</a>
             </div>  
         </div>
 
