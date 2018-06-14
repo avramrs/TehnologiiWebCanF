@@ -7,7 +7,7 @@
 	}
 	if(!$user)
 	{
-		header('Location: Login.php');
+		header('Location: index.php');
 	}
 ?>
 
@@ -42,6 +42,9 @@
 			}
 
 			while ($inreg = $rez->fetch_assoc()) {
+
+				$userID = $inreg['user_id'];
+
 				echo
 			   	'<div id="CF-can-image">
 					<img src="' . $inreg['url_image'] . '" alt="can image">
@@ -81,9 +84,9 @@
 		  				Download .xml
 					</a>';
 
-					if (strcmp($_SESSION['user_data']['username'], 'admin') === 0) {
+					if ((strcmp($_SESSION['user_data']['username'], 'admin') === 0) || ($_SESSION['user_data']['id'] == $userID)) {
 						echo
-						'<a href="upload-page.php?id=' . $canID . '">
+						'<a href="update-form.php">
 			  				Update
 						</a>
 						<a href="#">

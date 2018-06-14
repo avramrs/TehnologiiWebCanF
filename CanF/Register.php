@@ -43,7 +43,7 @@ if(isset($_POST['user'])&&isset($_POST['password']))
 
 		if(!$error)
 		{
-			header('Location: Login.php');
+			header('Location: index.php');
 		}
 	}
 }

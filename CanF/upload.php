@@ -6,7 +6,7 @@ if (isset($_SESSION['user_data'])) {
 
 }
 if (!$user) {
-    header('Location: Login.php');
+    header('Location: index.php');
 }
 require_once("upload-util.php");
 ?>

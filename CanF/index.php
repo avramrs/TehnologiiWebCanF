@@ -14,10 +14,10 @@ if(isset($_POST['user'])&&isset($_POST['password']))
 		'TWProject'   // baza de date
 	);
 
-	$query = $mysql->prepare("SELECT username,password FROM users WHERE username LIKE ?");
+	$query = $mysql->prepare("SELECT id,username,password FROM users WHERE username LIKE ?");
 	$query->bind_param("s",$user);
 	$rez = $query->execute();
-	$query->bind_result($username,$password);
+	$query->bind_result($id,$username,$password);
 	$query->fetch();
 
 
@@ -39,8 +39,8 @@ if(isset($_POST['user'])&&isset($_POST['password']))
 		{
 			session_start();
 			$_SESSION['user_data'] = array(
-					'username'=>$username
-
+					'username'=>$username,
+					'id'=>$id
 			);
 			header('Location: products.php');
 		}
@@ -63,7 +63,7 @@ if(isset($_POST['user'])&&isset($_POST['password']))
 
 		<div id="CF-LoginBox">
 			<p id="CF-Text">Login with your acount!</p>
-			<form action="Login.php" method="post">
+			<form action="index.php" method="post">
 				<?php if($error): ?>
 					<div id="CF-Error">ERROR: <?php echo $error; ?> </div>
 				<?php endif; ?>
@@ -85,7 +85,7 @@ if(isset($_POST['user'])&&isset($_POST['password']))
 								<p id="CF-Text2">Or</p>
 							</th>
 							<th>
-								<a  href="Register.php">
+								<a  href="register.php">
 									<p id="CF-Btn">Register </p>
 								</a>
 
