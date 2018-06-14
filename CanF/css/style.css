@@ -405,6 +405,11 @@ RESPONSIVENESS SECTION
 	font-weight: bold;
 	text-align: center;
 }
+#CF-Contact{
+	font-family: arial;
+	margin-top: 100px;
+	margin-left: 50px;
+}
 
 @media screen and (max-width: 767px){
 	#CF-products #CF-search-results-text{
