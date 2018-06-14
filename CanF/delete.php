@@ -14,4 +14,5 @@
 	}
 
 	$mysql->close();
+	header('Location: products.php');
 ?>
