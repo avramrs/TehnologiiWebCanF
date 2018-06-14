@@ -16,9 +16,9 @@
 
 	<div id="CF-title-section" >
 		<div class="CF-container">
-
-		<img src="img/LogoTW2.png" alt="Logo">
-
+		<a href="Products.php">
+			<img src="img/LogoTW2.png" alt="Logo">
+		</a>
 		</div>
 	</div>
 
