@@ -225,7 +225,20 @@ UPLOAD PAGE
 	font-size: 14pt;
 	
 }
-#CF-can-upload #CF-form-container label
+#CF-can-upload #CF-form-container #form-error{
+	font-family: helvetica;
+	font-weight: bold;
+	color: #ff0000;
+	clear: both;
+}
+#CF-can-upload #CF-form-container #form-success{
+	font-family: helvetica;
+	font-weight: bold;
+	color: #4CAF50;
+	clear: both;
+}
+#CF-can-upload #CF-form-container label,
+#CF-can-upload #CF-form-container h1
 {
 	font-family: helvetica;
 	font-weight: bold;
