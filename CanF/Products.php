@@ -33,8 +33,9 @@
 <body class="CF-no-margin">
 	<div id="CF-page">
 		<div id="CF-products">
+			<a id="CF-Logout" href="Logout.php">Logout</a>
 			<div id=CF-search-results-text>
-				<a class="CF-PDF" href="stocks.pdf" download target="_blank">
+				<a class="CF-PDF" href="stocks-generator.php">
 					Stock
 				</a>
 				<!-- <br /> -->
@@ -60,10 +61,9 @@
 			<a href="products.php">
 				<img src="img/LogoTW2.png" alt="Logo">
 			</a>
-			
-				<a id="CF-import-button" href="Logout.php">Logout</a>
-				
-			
+			<a href="upload-page.php">
+				<img id=CF-import-button src="img/Import.png" alt="Logo">
+			</a>
 		</div>
 	</div>
 </body>
