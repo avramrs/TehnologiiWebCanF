@@ -30,23 +30,19 @@
 		});
 	</script>
 </head>
-<body class="CF-no-margin">
+<body id="CF-products-page" class="CF-no-margin">
 	<div id="CF-page">
 		<div id="CF-products">
-			<a id="CF-Logout" href="Logout.php">Logout</a>
-			<div id=CF-search-results-text>
+			<div id="CF-download-buttons">
 				<a class="CF-PDF" href="stocks-generator.php">
 					Stock
 				</a>
-				<!-- <br /> -->
 				<a class="CF-PDF" href="upload-page.php">
 					Import
 				</a>
 				<a class="CF-PDF" href="contact.php">
 					Contact
 				</a>
-				<!-- <input type="text" placeholder="Search..."><br />
-				<span id="results">Results:</span> -->
 			</div>
 
 			<!-- PHP -->
@@ -61,9 +57,7 @@
 			<a href="products.php">
 				<img src="img/LogoTW2.png" alt="Logo">
 			</a>
-			<a href="upload-page.php">
-				<img id=CF-import-button src="img/Import.png" alt="Logo">
-			</a>
+			<a id="CF-import-button" href="Logout.php">Logout</a>
 		</div>
 	</div>
 </body>

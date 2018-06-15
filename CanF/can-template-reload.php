@@ -35,8 +35,32 @@
 							<th>' . $inreg['packaging'] . '</th>
 						</tr>
 						<tr>
+							<th>Quantity:</th>
+							<th>' . $inreg['quantity'] . '</th>
+						</tr>
+						<tr>
 							<th>Serving:</th>
 							<th>' . $inreg['serving'] . '</th>
+						</tr>
+						<tr>
+							<th>Brands:</th>
+							<th>' . $inreg['brand'] . '</th>
+						</tr>
+						<tr>
+							<th>Shops where sold:</th>
+							<th>' . $inreg['shop'] . '</th>
+						</tr>
+						<tr>
+							<th>Countries where sold:</th>
+							<th>' . $inreg['country'] . '</th>
+						</tr>
+						<tr>
+							<th>Made in:</th>
+							<th>' . $inreg['made_in'] . '</th>
+						</tr>
+						<tr>
+							<th>In stock:</th>
+							<th>' . $inreg['cans_number'] . '</th>
 						</tr>
 					</table>
 				</div>

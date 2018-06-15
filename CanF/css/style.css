@@ -142,7 +142,7 @@ CAN TEMPLATE PAGE
     padding: 10px;
     border: 1px solid #1e6379;
     background-color: white;
-    max-width: 90%;
+    max-width: 325px;
 }
 /* CAN DETAILS TABLE */
 #CF-can-template .CF-can-details-table table {
@@ -162,7 +162,8 @@ CAN TEMPLATE PAGE
 	background-color: #ffce4f;
 }
 /* CAN DOWNLOAD BUTTONS */
-#CF-can-template #CF-download-buttons {
+#CF-can-template #CF-download-buttons,
+#CF-products-page #CF-download-buttons {
 	margin-top: 40px
 }
 
@@ -254,7 +255,8 @@ UPLOAD PAGE
 }
 #CF-can-upload #CF-upload-button label,
 /* PLUS CAN TEMPLATE DOWNLOAD BUTTONS */
-#CF-can-template #CF-download-buttons a {
+#CF-can-template #CF-download-buttons a,
+#CF-products-page #CF-download-buttons a {
 	text-decoration: none;
     background-color: #4CAF50;
     color: white;
@@ -264,6 +266,13 @@ UPLOAD PAGE
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 8px;
+}
+#CF-products-page #CF-download-buttons a {
+	margin: 5px 20px;
+	background-color: #ffac33;
+}
+#CF-products-page #CF-download-buttons {
+	text-align: center;
 }
 /* UPLOAD PAGE RESPONSIVE */
 @media screen and (max-width: 767px) {
@@ -285,7 +294,8 @@ UPLOAD PAGE
     	text-align: center;
 	}
 	/* PLUS CAN TEMPLATE DOWNLOAD BUTTONS */
-	#CF-can-template #CF-download-buttons a {
+	#CF-can-template #CF-download-buttons a,
+	#CF-products-page #CF-download-buttons a {
 		display: block;
 	    width: 50%;
 	    margin-left: auto;
@@ -328,7 +338,7 @@ THUMBNAIL SECTION
 /***************************
 PRODUCTS RESULTS SECTION
 ***************************/
-.CF-PDF{
+#CF-PDF{
 	font-family: "Ostrich Sans",arial;
 	font-weight: bold;
 	text-decoration: none;
@@ -342,8 +352,11 @@ PRODUCTS RESULTS SECTION
 }
 #CF-search-results{
 	display: block;
-	margin-left: 58px;
-	margin-right: auto;
+	margin: 40px;
+	/*text-align: center;*/
+}
+#CF-search-results a {
+	text-decoration: none;
 }
 #CF-search-results-text{
 	display: block;

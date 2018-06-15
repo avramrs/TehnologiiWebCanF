@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <products>
 	<product>
+		<cans_number>3</cans_number>
+		<url_image>img/can2.jpg</url_image>
+		<name>Australian Grown Carrots</name>
+		<ingredients>Australian Fresh Carrots</ingredients>
+		<packaging>Plastic Bag</packaging>
+		<quantity>1kg</quantity>
+		<serving></serving>
+		<brand>Woolworths Select, Woolworths</brand>
+		<shop>Woolworths</shop>
+		<country>Australia</country>
+		<made_in>Australia</made_in>
 	</product>
 </products>
