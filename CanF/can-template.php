@@ -54,19 +54,8 @@
 				</a>
 				<a href="xml-download.php?id=' . $canID . '">
 	  				Download .xml
-				</a>';
-
-				if ((strcmp($_SESSION['user_data']['username'], 'admin') === 0) || ($_SESSION['user_data']['id'] == $userID)) {
-					echo
-					'<a href="update-form.php?id=' . $canID . '">
-		  				Update
-					</a>
-					<a href="delete.php?id=' . $canID . '">
-		  				Delete
-					</a>';
-				}
-				
-			echo '</div>';
+				</a>
+			</div>';
 		?>
 	</div>
 

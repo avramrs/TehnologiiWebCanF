@@ -1,4 +1,16 @@
+
 <?php
+	session_start();
+	$user = null;
+	if(isset($_SESSION['user_data']))
+	{
+		$user = $_SESSION['user_data'];
+	}
+	if(!$user)
+	{
+		header('Location: index.php');
+	}
+
 
 	$canID = $_GET['id'];
 	
@@ -65,6 +77,19 @@
 					</table>
 				</div>
 			</div>';
+
+		if ((strcmp($_SESSION['user_data']['username'], 'admin') === 0) || ($_SESSION['user_data']['id'] == $userID)) {
+					echo
+					'<div id="CF-download-buttons" class="CF-center-aligned-text">
+					<a href="update-form.php?id=' . $canID . '">
+		  				Update
+					</a>
+					<a href="delete.php?id=' . $canID . '">
+		  				Delete
+					</a>
+					</div>';
+				}
+				else { echo '</div>';}
 	}
 
 	$mysql->close();
