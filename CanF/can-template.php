@@ -23,12 +23,13 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 
-		    var auto= $('#CF-ajax-can-content'), refreshed_content;	
-				refreshed_content = setInterval(function(){
-				auto.load('can-template-reload.php?id=<?php echo $canID; ?>');},
-				1000);
-				console.log(refreshed_content);										 
-				return false; 
+		    var auto= $('#CF-ajax-can-content'), refreshed_content;
+		    auto.load('can-template-reload.php?id=<?php echo $canID; ?>');
+			refreshed_content = setInterval(function(){
+			auto.load('can-template-reload.php?id=<?php echo $canID; ?>');},
+			5000);
+			console.log(refreshed_content);										 
+			return false; 
 		});
 	</script>
 </head>

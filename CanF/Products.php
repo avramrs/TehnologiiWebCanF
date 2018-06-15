@@ -22,11 +22,12 @@
 		$(document).ready(function(){ 
 
 		    var auto= $('#CF-ajax-content'), refreshed_content;	
-				refreshed_content = setInterval(function(){
-				auto.load("products-reload.php");},
-				1000);
-				console.log(refreshed_content);										 
-				return false; 
+		    auto.load("products-reload.php");
+			refreshed_content = setInterval(function(){
+			auto.load("products-reload.php");},
+			5000);
+			console.log(refreshed_content);										 
+			return false; 
 		});
 	</script>
 </head>
