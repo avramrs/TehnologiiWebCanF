@@ -45,7 +45,7 @@ function parseFileXML($productsXML)
         $productInfo = ["cans_number" => 0, "name" => "", "ingredients" => "", "url_image" => "", "packaging" => "", "quantity" => "", "serving" => "", "brand" => "", "shop" => "", "country" => "", "made_in" => ""];
         for ($i = 0; $i < tableFieldsNumber; $i++) {
             if (isset($product->{tableFields[$i]})) {
-                $productInfo[tableFields[$i]] = $product->{tableFields[$i]};
+                $productInfo[tableFields[$i]] = testInput($product->{tableFields[$i]});
             }
         }
         $database->updateProduct($productInfo, $uploadInfo);
@@ -97,13 +97,20 @@ function parseFileCSV($data, $header)
     for ($i = 0; $i < $rowNumber; $i++) {
         $productInfo = ["cans_number" => 0, "name" => "", "ingredients" => "", "url_image" => "", "packaging" => "", "quantity" => "", "serving" => "", "brand" => "", "shop" => "", "country" => "", "made_in" => ""];
         for ($j = 0; $j < $columnNumber; $j++) {
-            $productInfo[$header[$j]] = $data[$i][$header[$j]];
+            $productInfo[$header[$j]] = testInput($data[$i][$header[$j]]);
         }
         if(isInteger($productInfo["cans_number"])===false){
             return false;
         }
         $database->updateProduct($productInfo, $uploadInfo);
     }
+}
+function testInput($data)
+{
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
 }
 function isInteger($input){
     return(ctype_digit(strval($input)));
