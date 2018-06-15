@@ -86,7 +86,19 @@
             <h3>Usecase</h3>
             <p>
                 <!-- DE SCRIS TEXT AICI -->
-            </p>
+				The user can access the application only if he is logged in. The first page he sees is the Login page. Here the user can either login with an existing account or register with a new account using a username and a password. The logout button can be used to return here.
+				The next page after logging in is the Products page. Here he can see all the products that were uploaded so far and a few buttons.
+				A product can be clicked in order to see informations about it. He can see here by default 2 buttons that are used for downloading the said informations. If the user is an administrator or the owner (the user that uploaded the information) he can also delete the product or update it's information.
+			</p>
+			<li>
+				The stocks button downloads a pdf that can be used to see all the latest products that are in stock.
+			</li>
+			<li>
+				The Import button redirects the user to an upload page where he upload information about cans using different file formats.
+			</li>
+			<li>
+				The Contacts button shows the page that gives ways to contact us.			
+            </li>
             <figure typeof="sa:Image">
                 <img src="./Usecase.png" width="1200" height="730">
                 <figcaption>
@@ -98,7 +110,12 @@
             <h3>Implementation</h3>
             <p>
                 <!-- DE SCRIS TEXT AICI -->
-            </p>
+				The main tools were php, html, mysql and ajax. 
+				The login page checks if the username and password hash are the same as the one in the database. In the register page the input is checked so that the password is bigger than 6 characters and the user doesn't already exist. Each page checks if the user is logged in using sessions, if not he is reddirected to the login page.
+				The products page uses ajax to update the page in real time so that the user can see if cans are updated. The stocks button queries the database and uses fpdf to create a pdf with the data. The import part uses simpleXML tools and other functions to check if the xml or csv is valid and if it respects the required format having at least the name of the product. It sanitizez the input and then uploads it to the database.
+				In the page of a product...
+				The user can also choose to upload information if he has the same id as the user id in the database or if he is the admin. He is redirected to a form where he can change the fields that are already completed with the data from the database. The form checks if the user is admin or the owner again for security reasons and it also checks the input for code injection.
+			</p>
             <figure typeof="sa:Image">
                 <img src="./ClassDiagram.png" width="1200" height="730">
                 <figcaption>
