@@ -113,7 +113,7 @@
 				The main tools were php, html, mysql and ajax. 
 				The login page checks if the username and password hash are the same as the one in the database. In the register page the input is checked so that the password is bigger than 6 characters and the user doesn't already exist. Each page checks if the user is logged in using sessions, if not he is reddirected to the login page.
 				The products page uses ajax to update the page in real time so that the user can see if cans are updated. The stocks button queries the database and uses fpdf to create a pdf with the data. The import part uses simpleXML tools and other functions to check if the xml or csv is valid and if it respects the required format having at least the name of the product. It sanitizez the input and then uploads it to the database.
-				In the page of a product...
+				In the page of a product upon pressing a download button a string is created dynamically respecting the format of the file type and then it is put into a file with the required extension. The delete button querries the database and if the user has the permission it deletes the row in the database.
 				The user can also choose to upload information if he has the same id as the user id in the database or if he is the admin. He is redirected to a form where he can change the fields that are already completed with the data from the database. The form checks if the user is admin or the owner again for security reasons and it also checks the input for code injection.
 			</p>
             <figure typeof="sa:Image">
