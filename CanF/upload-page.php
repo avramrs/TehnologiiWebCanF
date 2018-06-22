@@ -28,10 +28,10 @@ if(!$user)
 	</div>
 
 	<div id="CF-content-section" class="CF-template-container">
-		<div id="CF-upload-text">
+		<div class="CF-upload-text">
 			<h1>Upload your<br>csv/xml file here:</h1>	
 		</div>
-		<form id="CF-upload-button" 
+		<form class="CF-upload-button" 
 		action="upload.php"
 		method="post"
 		enctype="multipart/form-data">
@@ -44,6 +44,14 @@ if(!$user)
 			<input id="CF-file-browse" type="file" name="uploadFile">
 			<input id="CF-file-upload" type="submit" name="submit"/>
 		</form>
+		<div class="CF-upload-text" style="margin-top: 0">
+			<h1>Upload from<br>Open Food Facts:</h1>	
+		</div>
+		<div id="CF-download-buttons" class="CF-upload-button" style="margin-top: 4px">
+			<a href="off-upload.php" style="text-align: center; background-color: #ffac33">
+				Upload
+			</a>
+		</div>
 	</div>
 
 </body>

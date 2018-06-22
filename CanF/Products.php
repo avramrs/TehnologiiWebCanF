@@ -16,19 +16,25 @@
 <head>
 	<title>CanF</title>
 	<link rel="stylesheet" href="css/style.css">
-
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function(){ 
-
-		    var auto= $('#CF-ajax-content'), refreshed_content;	
-		    auto.load("products-reload.php");
-			refreshed_content = setInterval(function(){
-			auto.load("products-reload.php");},
-			5000);
-			console.log(refreshed_content);										 
-			return false; 
-		});
+	<script>
+	function showContent() {
+	        if (window.XMLHttpRequest) {
+	            // code for IE7+, Firefox, Chrome, Opera, Safari
+	            xmlhttp = new XMLHttpRequest();
+	        } else {
+	            // code for IE6, IE5
+	            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+	        }
+	        xmlhttp.onreadystatechange = function() {
+	            if (this.readyState == 4 && this.status == 200) {
+	                document.getElementById("CF-ajax-content").innerHTML = this.responseText;
+	            }
+	        };
+	        xmlhttp.open("GET","products-reload.php",true);
+	        xmlhttp.send();
+	    }
+	showContent();
+	setInterval(showContent, 5000);
 	</script>
 </head>
 <body id="CF-products-page" class="CF-no-margin">

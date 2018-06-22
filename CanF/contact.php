@@ -1,3 +1,16 @@
+<?php
+	session_start();
+	$user = null;
+	if(isset($_SESSION['user_data']))
+	{
+		$user = $_SESSION['user_data'];
+	}
+	if(!$user)
+	{
+		header('Location: index.php');
+	}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +22,7 @@
 		<div id="CF-page">
 		    <div id="CF-Contact">  
             <h1>Contact</h1>
-            <h3>If you have any complaints or want to import data from other places please send us an email.</h1>
+            <h3>If you have any complaints please send us an email.</h1>
             <a href="mailto:cannedfoodmanager@gmail.com">cannedfoodmanager@gmail.com</a>
             </div>  
         </div>

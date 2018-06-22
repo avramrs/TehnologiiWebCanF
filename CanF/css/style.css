@@ -163,25 +163,26 @@ CAN TEMPLATE PAGE
 }
 /* CAN DOWNLOAD BUTTONS */
 #CF-can-template #CF-download-buttons,
-#CF-products-page #CF-download-buttons {
+#CF-products-page #CF-download-buttons,
+#CF-can-upload #CF-download-buttons {
 	margin-top: 40px
 }
 
 /***************************
 UPLOAD PAGE
 ***************************/
-#CF-can-upload #CF-upload-text-result{
+#CF-can-upload .CF-upload-text-result{
 	display: block;
 	margin-top: 10%;
 	margin-bottom: 10%;
 	text-align: center;
 }
-#CF-can-upload #CF-upload-text {
+#CF-can-upload .CF-upload-text {
 	display: inline-block;
     margin: 70px 0 75px 20%;
     width: 30%;
 }
-#CF-can-upload #CF-upload-text h1
+#CF-can-upload .CF-upload-text h1
 {
 	margin: 0;
     font-family: helvetica;
@@ -245,18 +246,19 @@ UPLOAD PAGE
 	font-weight: bold;
 	color: #13404e;
 }
-#CF-can-upload #CF-upload-button {
+#CF-can-upload .CF-upload-button {
 	display: inline-block;
 	position: absolute;
     margin-top: 75px;
 }
-#CF-can-upload #CF-upload-button input {
+#CF-can-upload .CF-upload-button input {
 	display: none;
 }
-#CF-can-upload #CF-upload-button label,
+#CF-can-upload .CF-upload-button label,
 /* PLUS CAN TEMPLATE DOWNLOAD BUTTONS */
 #CF-can-template #CF-download-buttons a,
-#CF-products-page #CF-download-buttons a {
+#CF-products-page #CF-download-buttons a,
+#CF-can-upload #CF-download-buttons a {
 	text-decoration: none;
     background-color: #4CAF50;
     color: white;
@@ -276,18 +278,18 @@ UPLOAD PAGE
 }
 /* UPLOAD PAGE RESPONSIVE */
 @media screen and (max-width: 767px) {
-	#CF-can-upload #CF-upload-text {
+	#CF-can-upload .CF-upload-text {
 		display: block;
 		width: 75%;
 		margin: 0 auto;
 	}
-	#CF-can-upload #CF-upload-button {
+	#CF-can-upload .CF-upload-button {
 		position: relative;
 		display: block;
 		width: 75%;
 		margin: 0 auto;
 	}
-	#CF-can-upload #CF-upload-button label {
+	#CF-can-upload .CF-upload-button label {
 		margin: 20px auto;
     	display: block;
     	width: 50%;
@@ -295,7 +297,8 @@ UPLOAD PAGE
 	}
 	/* PLUS CAN TEMPLATE DOWNLOAD BUTTONS */
 	#CF-can-template #CF-download-buttons a,
-	#CF-products-page #CF-download-buttons a {
+	#CF-products-page #CF-download-buttons a,
+	#CF-can-upload #CF-download-buttons a {
 		display: block;
 	    width: 50%;
 	    margin-left: auto;
@@ -463,6 +466,10 @@ RESPONSIVENESS SECTION
 @media screen and (max-width: 479px){
 	#CF-products #CF-search-results-text{
 		text-align: center;
+	}
+	#CF-can-upload #CF-form-container{
+		left: 15%;
+		width: 70%;
 	}
 }
 @media screen and (max-width: 320px){

@@ -18,19 +18,25 @@
 <head>
 	<title>CanF</title>
 	<link rel="stylesheet" href="css/style.css">
-
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-
-		    var auto= $('#CF-ajax-can-content'), refreshed_content;
-		    auto.load('can-template-reload.php?id=<?php echo $canID; ?>');
-			refreshed_content = setInterval(function(){
-			auto.load('can-template-reload.php?id=<?php echo $canID; ?>');},
-			5000);
-			console.log(refreshed_content);										 
-			return false; 
-		});
+	<script>
+	function showContent() {
+	        if (window.XMLHttpRequest) {
+	            // code for IE7+, Firefox, Chrome, Opera, Safari
+	            xmlhttp = new XMLHttpRequest();
+	        } else {
+	            // code for IE6, IE5
+	            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+	        }
+	        xmlhttp.onreadystatechange = function() {
+	            if (this.readyState == 4 && this.status == 200) {
+	                document.getElementById("CF-ajax-can-content").innerHTML = this.responseText;
+	            }
+	        };
+	        xmlhttp.open("GET","can-template-reload.php?id=<?php echo $canID; ?>",true);
+	        xmlhttp.send();
+	    }
+	showContent();
+	setInterval(showContent, 5000);
 	</script>
 </head>
 <body id="CF-can-template" class="CF-no-margin CF-lightblue-background-color">
